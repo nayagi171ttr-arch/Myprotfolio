@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nayagi171ttr-arch.github.io/Myprotfolio/sitemap.xml
