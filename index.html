@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ranganayagi | Full Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Ranganayagi - Full Stack Web Developer specializing in modern, responsive, and high-performance web experiences.">
+  <meta name="author" content="Ranganayagi">
+  <meta name="theme-color" content="#050510">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Ranganayagi | Full Stack Web Developer">
+  <meta property="og:description" content="Explore modern web development projects, technical skills, and creative solutions.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="brand" aria-label="Ranganayagi home">
+        <span class="brand-mark">R</span>
+        <span class="brand-copy">
+          <strong>Ranganayagi</strong>
+          <small>FULL STACK DEVELOPER</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+
+      <a href="#contact" class="nav-cta">
+        <span>Let's Collaborate</span>
+        <span>→</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span>Crafting Digital Excellence</span>
+          </div>
+
+          <h1>
+            Hi, I'm <span class="name-highlight gradient-text">Ranganayagi</span><br>
+            Building <span id="typing-text">Web Experiences</span>
+          </h1>
+
+          <p class="hero-description">
+            I design and develop modern, scalable web applications with clean code, intuitive interfaces,
+            and seamless user experiences. Turning complex ideas into elegant digital solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              <span>View My Work</span>
+              <span>→</span>
+            </a>
+            <a class="button button-outline" href="#contact">
+              <span>Get In Touch</span>
+              <span>✉</span>
+            </a>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M4 17c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>01+</strong>
+                <span>Years of Learning</span>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <rect x="3" y="4" width="14" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7 8l2 2-2 2M11 12h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>05+</strong>
+                <span>Core Technologies</span>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4 6h12M4 10h12M4 14h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>03+</strong>
+                <span>Projects Completed</span>
+              </div>
+            </div>
+
+            <div class="stat">
+              <div class="stat-icon">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M10 3l2.09 6.26H18l-5.17 3.76 1.97 6.08L10 15.34l-4.8 3.76 1.97-6.08L2 9.26h5.91L10 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Dedication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-glow"></div>
+          <div class="portrait-frame">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=85"
+              alt="Portrait of Ranganayagi - Web Developer"
+              class="developer-portrait"
+            >
+          </div>
+
+          <div class="floating-card floating-card-left">
+            <span class="availability-dot"></span>
+            <div>
+              <strong>Available for Hire</strong>
+              <p>Freelance & Full-time</p>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-right">
+            <div>
+              <strong>Clean Code</strong>
+              <p>Modern Best Practices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section section" id="about">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <div class="eyebrow">
+            <span>About Me</span>
+          </div>
+          <h2>Transforming Ideas Into <span class="gradient-text">Digital Reality</span></h2>
+        </div>
+
+        <div class="about-content">
+          <p>
+            I'm a passionate Full Stack Developer who loves building elegant, performant, and user-centric web solutions.
+            With a strong foundation in modern web technologies, I focus on creating applications that not only look great
+            but deliver exceptional functionality.
+          </p>
+          <p>
+            I thrive on continuous learning, solving complex problems, and collaborating with others to bring innovative
+            ideas to life. Every project is an opportunity to push boundaries and create something meaningful.
+          </p>
+          <a href="#skills" class="text-link">
+            <span>Explore My Expertise</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills-section section" id="skills">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">
+            <span>Technical Arsenal</span>
+          </div>
+          <h2>Skills & <span class="gradient-text">Technologies</span></h2>
+          <p class="section-description">
+            A curated set of tools and technologies I use to build robust, scalable, and beautiful web applications.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M4 3l2.01 18L12 21l5.99-0.99L20 3H4zm14.05 6H9.52l0.32 4h7.64l-0.55 6.17L12 19.96l-3.93-0.79-0.27-3.01h2l0.14 1.5L12 17.54l2.06-0.29 0.21-2.33H9.38l-0.56-6.21h10.74L17.99 9z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>HTML5 & CSS3</h3>
+            <p>Semantic markup, modern layouts with Flexbox & Grid, animations, and responsive design principles.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h2v2H7V7zm0 4h2v6H7v-6zm4-4h6v2h-6V7zm0 4h6v2h-6v-2zm0 4h6v2h-6v-2z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>JavaScript (ES6+)</h3>
+            <p>Modern JavaScript, DOM manipulation, async programming, and building interactive web experiences.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.18L19.82 8 12 11.82 4.18 8 12 4.18zM4 9.18l7 3.5v7.14l-7-3.5V9.18zm9 10.64v-7.14l7-3.5v7.14l-7 3.5z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Python</h3>
+            <p>Object-oriented programming, automation scripts, data handling, and backend development.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5-9h10v2H7z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Django</h3>
+            <p>Full-stack web framework, RESTful APIs, authentication, ORM, and secure database-driven applications.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l4.59-4.58L18 11l-6 6z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Database Design</h3>
+            <p>SQLite, relational database modeling, efficient queries, and data integrity best practices.</p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>AI & LLMs</h3>
+            <p>Exploring large language models, prompt engineering, and building intelligent AI-powered applications.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects-section section" id="projects">
+      <div class="container">
+        <div class="section-heading centered">
+          <div class="eyebrow">
+            <span>Featured Work</span>
+          </div>
+          <h2>Recent <span class="gradient-text">Projects</span></h2>
+          <p class="section-description">
+            A showcase of my latest work, from AI applications to full-stack web solutions.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <a class="project-image" href="#contact" aria-label="Ask about LLM Chatbot project">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80" alt="AI chatbot interface with neural network visualization" loading="lazy">
+              <span class="project-image-overlay">Inquire About Project →</span>
+            </a>
+            <div class="project-info">
+              <div>
+                <h3>LLM-Powered Chatbot</h3>
+                <p>AI Application</p>
+              </div>
+              <span class="project-number">01</span>
+            </div>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>LLM Integration</span>
+              <span>REST API</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="#contact" aria-label="Ask about Portfolio Website project">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80" alt="Modern web development workspace with code on screen" loading="lazy">
+              <span class="project-image-overlay">Inquire About Project →</span>
+            </a>
+            <div class="project-info">
+              <div>
+                <h3>Professional Portfolio</h3>
+                <p>Responsive Web Design</p>
+              </div>
+              <span class="project-number">02</span>
+            </div>
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Modern UI/UX</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="#contact" aria-label="Ask about Web Applications project">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80" alt="Team collaboration on web application development" loading="lazy">
+              <span class="project-image-overlay">Inquire About Project →</span>
+            </a>
+            <div class="project-info">
+              <div>
+                <h3>Dynamic Web Applications</h3>
+                <p>Full-Stack Development</p>
+              </div>
+              <span class="project-number">03</span>
+            </div>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>SQLite</span>
+              <span>Authentication</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="#contact" aria-label="Ask about E-Commerce project">
+              <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80" alt="E-commerce online shopping interface" loading="lazy">
+              <span class="project-image-overlay">Inquire About Project →</span>
+            </a>
+            <div class="project-info">
+              <div>
+                <h3>E-Commerce Platform</h3>
+                <p>Web Development</p>
+              </div>
+              <span class="project-number">04</span>
+            </div>
+            <div class="project-tags">
+              <span>UI/UX Design</span>
+              <span>JavaScript</span>
+              <span>Responsive</span>
+              <span>Modern Design</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer">
+          <a class="button button-outline" href="#contact">
+            <span>Have a Project in Mind?</span>
+            <span>Let's Talk →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section section">
+      <div class="container">
+        <div class="blog-inner">
+          <div class="blog-inner-content">
+            <div class="eyebrow">
+              <span>Always Learning, Always Building</span>
+            </div>
+            <h2>Ready to bring your <span class="gradient-text">ideas to life?</span></h2>
+            <p>
+              I'm constantly exploring new technologies and building innovative solutions.
+              Let's collaborate to create something extraordinary together.
+            </p>
+          </div>
+          <a class="button button-primary" href="#contact">
+            <span>Start a Conversation</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section section" id="contact">
+      <div class="container contact-inner">
+        <div class="section-heading centered">
+          <div class="eyebrow">
+            <span>Get In Touch</span>
+          </div>
+          <h2>Let's Create Something <span class="gradient-text">Amazing</span></h2>
+          <p class="section-description">
+            Have a project idea, job opportunity, or just want to say hi? I'd love to hear from you.
+          </p>
+        </div>
+
+        <a class="button button-primary contact-button" href="mailto:your.email@example.com">
+          <span>Say Hello</span>
+          <span>✉ your.email@example.com</span>
+        </a>
+
+        <div class="social-links">
+          <a class="social-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <span>↗</span>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <span>LinkedIn</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-brand">
+        <span class="footer-brand-dot"></span>
+        <span>Ranganayagi</span>
+      </a>
+      <p>Designed & Built with passion</p>
+      <p>© <span id="current-year"></span> Ranganayagi. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
