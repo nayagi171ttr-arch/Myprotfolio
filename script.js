@@ -4,19 +4,60 @@ document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".nav-link");
   const currentYear = document.getElementById("current-year");
   const typingText = document.getElementById("typing-text");
+  const themeToggle = document.getElementById("theme-toggle");
+  const htmlEl = document.documentElement;
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+  const applyTheme = (theme) => {
+    htmlEl.setAttribute('data-theme', theme);
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    }
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', theme === 'light' ? '#F8FAFC' : '#050510');
+    }
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {}
+  };
+
+  // Ensure initial label is correct based on current theme
+  const currentTheme = htmlEl.getAttribute('data-theme') || 'dark';
+  if (themeToggle) {
+    themeToggle.setAttribute('aria-label', currentTheme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  }
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', currentTheme === 'light' ? '#F8FAFC' : '#050510');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = htmlEl.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
 
   if (currentYear) {
     currentYear.textContent = new Date().getFullYear();
   }
 
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
+    const toggleMenu = () => {
       const isOpen = navLinks.classList.toggle("open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
       menuToggle.setAttribute(
         "aria-label",
         isOpen ? "Close navigation menu" : "Open navigation menu"
       );
+    };
+
+    menuToggle.addEventListener("click", toggleMenu);
+
+    menuToggle.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleMenu();
+      }
     });
 
     navItems.forEach((link) => {
