@@ -453,6 +453,22 @@ img {
   display: inline-block;
 }
 
+.hero-role {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(20px, 2.8vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+}
+
+.hero-typing {
+  color: var(--text-muted);
+  font-size: clamp(13px, 1.6vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 #typing-text {
   display: inline-block;
   white-space: nowrap;
@@ -793,9 +809,93 @@ img {
   color: var(--text-muted);
 }
 
+/* Experience */
+.experience-section {
+  background: radial-gradient(ellipse at top, rgba(139, 92, 246, 0.1) 0%, transparent 60%);
+}
+
+.experience-card {
+  max-width: 920px;
+  margin: 48px auto 0;
+  padding: 34px 36px;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.18) 0%, rgba(15, 16, 38, 0.95) 100%);
+  box-shadow: 0 40px 80px rgba(5, 5, 16, 0.45);
+  animation: fadeInUp 0.9s ease-out;
+}
+
+.experience-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.experience-company {
+  color: var(--primary-glow);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.experience-head h3 {
+  margin-top: 8px;
+  font-size: clamp(26px, 3vw, 34px);
+  letter-spacing: -0.02em;
+}
+
+.experience-duration {
+  margin-top: 6px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.experience-summary {
+  margin-top: 20px;
+  color: var(--text-secondary);
+  font-size: 17px;
+}
+
+.experience-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0 18px;
+  color: var(--text-muted);
+}
+
+.experience-list li::marker {
+  color: var(--primary-glow);
+}
+
+.experience-card .project-tags {
+  padding: 24px 0 0;
+}
+
 /* Projects */
 .projects-section {
   background: radial-gradient(ellipse at top, rgba(34, 211, 238, 0.08) 0%, transparent 60%);
+}
+
+.project-group-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 56px;
+  font-size: clamp(22px, 3vw, 28px);
+  letter-spacing: -0.02em;
+}
+
+.project-group-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(167, 139, 250, 0.4), transparent);
+}
+
+.project-group-title + .projects-grid {
+  margin-top: 24px;
 }
 
 .projects-grid {
@@ -894,6 +994,40 @@ img {
   border-radius: 999px;
   border: 1px solid var(--border-light);
   background: rgba(139, 92, 246, 0.18);
+  font-size: 12px;
+}
+
+.project-card .project-tags {
+  padding-bottom: 14px;
+}
+
+.project-description {
+  padding: 14px 30px 0;
+  color: var(--text-muted);
+}
+
+.project-description strong {
+  color: var(--text-secondary);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 0 30px 30px;
+}
+
+.project-links .text-link {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.project-link-placeholder {
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px dashed var(--border);
+  color: var(--text-muted);
   font-size: 12px;
 }
 
@@ -1041,6 +1175,18 @@ img {
     display: none;
   }
 
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .floating-card-right {
+    right: 0;
+  }
+
   .stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1121,6 +1267,15 @@ img {
 
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .experience-card {
+    padding: 28px 24px;
+  }
+
+  .experience-head {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .footer-inner {

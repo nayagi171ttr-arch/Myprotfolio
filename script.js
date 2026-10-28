@@ -75,10 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (typingText && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     const phrases = [
-      "Scalable Web Apps",
-      "Modern Interfaces",
-      "Intelligent Solutions",
-      "Seamless Experiences"
+      "Python Applications",
+      "Django Web Apps",
+      "AI-Powered Solutions",
+      "LLM Chatbots"
     ];
 
     let phraseIndex = 0;

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-labelledby="title desc">
+  <title id="title">Ranganayagi portrait placeholder</title>
+  <desc id="desc">A neutral illustrated placeholder with the letter R, used until a professional photo is added.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15132b"/>
+      <stop offset="0.55" stop-color="#0f1026"/>
+      <stop offset="1" stop-color="#050510"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="34%" r="62%">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="letter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="340" r="330" fill="url(#glow)"/>
+  <g opacity="0.28" fill="none" stroke="#a78bfa" stroke-width="2">
+    <circle cx="400" cy="400" r="250"/>
+    <circle cx="400" cy="400" r="310"/>
+  </g>
+  <g fill="#8b5cf6" opacity="0.5">
+    <circle cx="150" cy="190" r="5"/>
+    <circle cx="655" cy="250" r="4"/>
+    <circle cx="620" cy="620" r="5"/>
+    <circle cx="190" cy="610" r="4"/>
+  </g>
+  <circle cx="400" cy="390" r="158" fill="#1e1b3a" stroke="#8b5cf6" stroke-opacity="0.65" stroke-width="3"/>
+  <text x="400" y="452" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="180" font-weight="800" fill="url(#letter)">R</text>
+  <path d="M220 1000c0-130 80-230 180-230s180 100 180 230" fill="#1e1b3a" stroke="#8b5cf6" stroke-opacity="0.4" stroke-width="3"/>
+  <g font-family="Inter, Arial, sans-serif" font-size="30" font-weight="600" fill="#a78bfa" opacity="0.85">
+    <text x="400" y="905" text-anchor="middle">PYTHON · DJANGO · AI</text>
+  </g>
+</svg>
