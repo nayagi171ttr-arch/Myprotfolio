@@ -1211,8 +1211,12 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .hero-content {
+    order: 0;
+  }
+
   .hero-visual {
-    order: -1;
+    order: 1;
   }
 
   .floating-card-left {
@@ -1290,6 +1294,16 @@ img {
     width: calc(100% - 28px);
   }
 
+  .hero-content {
+    order: 0;
+  }
+
+  .hero-visual {
+    order: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -1298,10 +1312,5 @@ img {
     position: static;
     margin-top: 18px;
     align-self: flex-start;
-  }
-
-  .hero-visual {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
