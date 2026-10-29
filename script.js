@@ -11,6 +11,7 @@ const translations = {
     "nav.experience": "Experience",
     "nav.projects": "Projects",
     "nav.education": "Education",
+    "nav.more": "More",
     "nav.contact": "Contact",
     "nav.collaborate": "Let's Collaborate",
     "menu.open": "Open navigation menu",
@@ -142,6 +143,7 @@ const translations = {
     "nav.experience": "அனுபவம்",
     "nav.projects": "திட்டங்கள்",
     "nav.education": "கல்வி",
+    "nav.more": "மேலும்",
     "nav.contact": "தொடர்பு",
     "nav.collaborate": "இணைந்து பணியாற்றுவோம்",
     "menu.open": "வழிசெலுத்தல் மெனுவைத் திற",
@@ -273,6 +275,7 @@ const translations = {
     "nav.experience": "अनुभव",
     "nav.projects": "प्रोजेक्ट्स",
     "nav.education": "शिक्षा",
+    "nav.more": "और",
     "nav.contact": "संपर्क",
     "nav.collaborate": "आइए साथ काम करें",
     "menu.open": "नेविगेशन मेनू खोलें",
@@ -709,6 +712,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (menuToggle && navLinks) {
+    const navMore = navLinks.querySelector(".nav-more");
+
     const toggleMenu = () => {
       const isOpen = navLinks.classList.toggle("open");
       menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -727,6 +732,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navItems.forEach((link) => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("open");
+        if (navMore) navMore.open = false;
         menuToggle.setAttribute("aria-expanded", "false");
         updateMenuToggleLabel();
       });
@@ -735,12 +741,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         navLinks.classList.remove("open");
+        if (navMore) navMore.open = false;
         menuToggle.setAttribute("aria-expanded", "false");
         updateMenuToggleLabel();
       }
     });
 
     document.addEventListener("click", (event) => {
+      if (navMore && navMore.open && !navMore.contains(event.target)) {
+        navMore.open = false;
+      }
+
       if (
         navLinks.classList.contains("open") &&
         !navLinks.contains(event.target) &&
